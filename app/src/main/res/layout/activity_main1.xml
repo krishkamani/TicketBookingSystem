@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blues"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/textViewA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Ticket Booking System"
+        android:textColor="@color/lightgreen"
+        android:background="@drawable/curved_view3"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/calligraffitti" />
+
+    <EditText
+        android:id="@+id/user_name"
+        android:background="@drawable/curved_view2"
+        android:textSize="20dp"
+        android:layout_below="@id/textViewA"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Enter name"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_width="350dp"
+        android:layout_height="45dp"/>
+
+    <EditText
+        android:id="@+id/lage"
+        android:background="@drawable/curved_view2"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/user_name"
+        android:layout_marginTop="15dp"
+        android:hint="Enter age"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="number"
+        android:layout_width="350dp"
+        android:layout_height="45dp"/>
+
+    <EditText
+        android:id="@+id/lmobile"
+        android:background="@drawable/curved_view2"
+        android:textSize="20dp"
+        android:layout_below="@id/lage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:hint="Enter Mobile No."
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="number"
+        android:layout_width="350dp"
+        android:layout_height="45dp"/>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lmobile"
+        android:layout_marginTop="15dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"/>
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:visibility="gone"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner1"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"/>
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:visibility="gone"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner2"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"/>
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:visibility="gone"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner3"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"/>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/spinner4"
+        android:clickable="true"
+        android:onClick="setDate"
+        android:id="@+id/date"
+        android:background="@drawable/gradient"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/date_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="32dp"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/date_icon"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/date_text"
+                android:textColor="@color/abc_primary_text_material_dark"
+                android:layout_width="wrap_content"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:text="@string/date" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/set_date"
+                android:textSize="15dp"
+                android:textColor="@color/abc_secondary_text_material_dark"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/date"
+        android:clickable="true"
+        android:onClick="setTime"
+        android:id="@+id/time"
+        android:background="@drawable/gradient"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/time_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="32dp"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/time_icon"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/time_text"
+                android:textColor="@color/abc_primary_text_material_dark"
+                android:layout_width="wrap_content"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:text="@string/time" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/set_time"
+                android:textSize="15dp"
+                android:textColor="@color/abc_secondary_text_material_dark"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bookticket2"
+        android:layout_below="@id/time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/curved_view1"
+        android:text="Book Ticket"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/bookedticket"
+            android:layout_below="@id/bookticket2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/curved_view1"
+            android:text="View Booked Ticket"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/blueback">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="Welcome to Make Payment"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:fontFamily="@font/calligraffitti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/bookticket"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Book a Ticket"
+        android:background="@drawable/curved_view"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content">
+    </Button>
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Cancle a Ticket"
+        android:background="@drawable/curved_view"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content">
+    </Button>
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Add a complaint"
+        android:background="@drawable/curved_view"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content">
+    </Button>
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Check status"
+        android:background="@drawable/curved_view"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content">
+    </Button>
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Review complaint"
+        android:background="@drawable/curved_view"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content">
+    </Button>
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Search for ticket/technician"
+        android:background="@drawable/curved_view"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content">
+    </Button>
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Generate report"
+        android:background="@drawable/curved_view"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content">
+    </Button>
+</LinearLayout>
